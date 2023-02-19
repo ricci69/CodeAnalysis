@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+  <testsuites>	
+  <phpunit colors="true" bootstrap="../vendor/autoload.php">
+    <testsuite name="CodeAnalysis">	    
+    <testsuites>
+      <file>tests/testCodeAnalysis.php</file>	        
+      <testsuite name="CodeAnalysis">
+      <directory>tests/*Test.php</directory>	            
+      <directory suffix=".php">./</directory>
+      <exclude></exclude>	        
+      </testsuite>
+    </testsuite>	    
+    </testsuites>
+  </testsuites>	    
+  <filter>
+</phpunit> 	        
+<whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

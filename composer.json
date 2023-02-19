@@ -1,0 +1,35 @@
+{
+    "name": "ricci69/codeanalysis",
+    "description": "A project generated with PHPProjectGen for tests and analysis",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ricci69",
+            "email": "ricci69@protonmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "ricci69\\CodeAnalysis\\": "src/",
+            "ricci69\\CodeAnalysis\\Test\\": "tests/"
+        },
+        "psr-4": {
+            "ricci69\\CodeAnalysis\\": "src/",
+            "ricci69\\CodeAnalysis\\Test\\": "tests/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ricci69\\CodeAnalysis\\": "src/",
+            "ricci69\\CodeAnalysis\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
