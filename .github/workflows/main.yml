@@ -24,7 +24,8 @@ jobs:
     - name: Compose setup
       run: |
         composer validate
-        composer check-platform-reqs
+        # For the moment, I remove the check-platform-reqs that require the composer.lock file
+        # composer check-platform-reqs
         # if a package requires php: ^7, then the option --ignore-platform-req=php+ would allow installing on PHP8
         composer install --no-interaction --ignore-platform-req=php+
         
